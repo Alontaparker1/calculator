@@ -1,42 +1,45 @@
 *{
-    margin: 0;
-    padding: 0;
-    outline: none;
-    box-sizing: border-box;
-  }
-  html {
-    font-family: "Roboto" , "noto sans" , "Helvetica" "sans-serif";
-    font-size: 14px;
-    background-color:#5656f5;
-    height: 100%;
-  }
-  .calculator {
-    width: 350px;
-    height: auto;
-    margin: 70px auto 0;
-    overflow: hidden;
-    box-shadow: 4px 4px rgba(0, 0, 0, 0.2);
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-.calculator span { 
+html {
+  font-family: "Roboto", "Noto Sans", "Helvetica", sans-serif;
+  font-size: 14px;
+  background-color: #3498db;
+  height: 100%;
+}
+
+.calculator {
+
+width: 350px;
+height: auto;
+margin: 70px auto 0;
+overflow: hidden;
+box-shadow: 4px 4px rgba(0,0,0.2);
+
+}
+
+.calculator span {
   -moz-user-select: none;
   user-select: none;
-
 }
 
 .top {
-   position: relative;
-     height: 150px;
-     background-color: white;
-}
+  position: relative;
+  height: 150px;
+  background-color: white
 
-.top .unit{
+}
+.top .unit {
   text-transform: uppercase;
   position: absolute;
   top: 10px;
   left: 10px;
-  font-weight: 700;
+  font-weight:700;
   color: #757575;
+
 }
 
 .top .screen {
@@ -51,14 +54,13 @@
   align-items: center;
   justify-content: flex-end;
   width: 100%;
-  padding:5px ;
+  padding: 5px;
   text-align: right;
 }
-
 .screen .input {
-  color: #757575;
+  color:#757575;
   height: 60%;
-  font: size 35px; ;
+  font-size: 35px;
 }
 
 .screen .result {
@@ -67,8 +69,8 @@
   height: 40%;
 }
 
-.bottom{
-  background-color: #343434;
+.bottom {
+  background-color: #2d2d2d;
   height: 300px;
   color: #fff;
   cursor: pointer;
@@ -81,62 +83,64 @@
   display: flex;
 }
 
-.keys{
+.keys {
   width: 80%;
+
 }
 
 .keys .column {
   display: flex;
   flex-grow: 1;
+
 }
 
-.keys .column, .opertor {
+.keys .column, .operators {
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.keys .column span, .opertors span {
+.keys .column span, .operators span {
   position: relative;
   overflow: hidden;
   flex-grow: 1;
   width: 100%;
   line-height: 1;
   padding: 10px;
- display: flex;
- justify-content: center;
- align-items: center;
- transition: background-color 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.5s;
 }
 
 .keys .column span {
   font-size: 25px;
+
 }
 
-.keys .column span:hover, .opertors span:hover {
-  background-color: #343434;
+.keys .column span:hover, .operators span:hover {
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
-.opertors{
+.operators {
   width: 20%;
   font-size: 18px;
-  background-color: #343434;
+  background-color: #433443;
 }
 
 .delete {
   font-size: 16px;
-  text-transform: uppercase ;
+  text-transform: uppercase;
 }
 
-.credit{
+.credit {
   display: block;
   text-align: center;
   width: 100%;
-  position: absolute;
+  position:absolute;
   bottom: 20px;
-margin: 0 auto;
+  margin: 0 auto;
 }
-
-.credit a, .error{
-  color:red ;
+.credit a, .error {
+  color: #c2185b;
 }
