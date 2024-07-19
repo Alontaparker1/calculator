@@ -96,7 +96,7 @@
   align-items: center;
 }
 
-.keys . .column span, .opertors span {
+.keys .column span, .opertors span {
   position: relative;
   overflow: hidden;
   flex-grow: 1;
@@ -113,7 +113,7 @@
   font-size: 25px;
 }
 
-.keys . .column span:hover, .opertors span:hover {
+.keys .column span:hover, .opertors span:hover {
   background-color: #343434;
 }
 
